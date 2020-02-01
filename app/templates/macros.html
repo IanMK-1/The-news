@@ -1,7 +1,7 @@
 {% macro displayNewsSourcesList(news_sources_list) %}
 
     {% for news_sources in news_sources_list %}
-        <li>{{news_sources.id}}</li>
+        <li class="list-group-item">{{news_sources.id}}</li>
     {% endfor %}
 
 {% endmacro %}

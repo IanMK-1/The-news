@@ -1,14 +1,9 @@
+{% extends 'bootstrap/base.html' %}
 {% import 'macros.html' as macro %}
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-</head>
-<body>
+{% block content %}
     <h3>News Sources</h3>
-    <ul>
+    <ul class="list-group">
         {{ macro.displayNewsSourcesList(news_sources) }}
     </ul>
-</body>
-</html>
+{% endblock %}
