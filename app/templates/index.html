@@ -1,9 +1,17 @@
 {% extends 'bootstrap/base.html' %}
 {% import 'macros.html' as macro %}
 
+{% block navbar %}
+    <div class="container-fluid">
+        {% include 'navbar.html' %}
+    </div>
+{% endblock %}
+
 {% block content %}
-    <h3>News Sources</h3>
-    <ul class="list-group">
-        {{ macro.displayNewsSourcesList(news_sources) }}
-    </ul>
+    <div class="container-fluid">
+        <h3>News Sources</h3>
+        <ul class="list-group">
+            {{ macro.displayNewsSourcesList(news_sources) }}
+        </ul>
+    </div>
 {% endblock %}

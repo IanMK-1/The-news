@@ -3,10 +3,17 @@
     <head>
         <meta charset="utf-8">
         <title>Welcome to The News website</title>
+        <link rel="stylesheet" type="text/css" href="/app/static/css/index.css">
     </head>
     <body>
-        {% block content %}
+        <div>
+            {% block navbar %}
 
-        {% endblock %}
+            {% endblock %}
+
+            {% block content %}
+
+            {% endblock %}
+        </div>
     </body>
 </html>
