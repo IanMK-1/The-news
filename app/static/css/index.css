@@ -11,3 +11,20 @@ h3 {
     display: block;
     height: 300px;
 }
+#articles {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: left;
+    height: 600px;
+}
+.art-head {
+    text-align: center;
+}
+.jumbotron {
+    text-align: center;
+    background-color: rgb(47, 45, 47);
+    color: white;
+    margin-left: 14px;
+    margin-right: 14px;
+    font-family: 'Raleway', sans-serif;
+}
