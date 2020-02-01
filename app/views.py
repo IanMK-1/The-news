@@ -14,10 +14,10 @@ def index():
     return render_template('index.html', news_sources=all_news_sources)
 
 
-@app.route('/<id>/news_articles')
-def news_articles(id):
+@app.route('/news_articles/<source_id>')
+def news_articles(source_id):
     """Function that returns page with articles from a news source"""
 
-    articles = obtain_news_article(id)
+    all_articles = obtain_news_article(source_id)
 
-    render_template('news_articles.html', news_articles=articles)
+    return render_template('news_articles.html', news_articles=all_articles)

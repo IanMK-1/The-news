@@ -14,7 +14,7 @@ news_article_base_url = app.config['NEWS_API_ARTICLES_BASE_URL']
 
 
 def obtain_news_sources():
-    """Obtains the json response to the news sources url"""
+    """Obtains the response from the news sources url"""
 
     news_sources_url = news_source_base_url.format(api_key)
 
@@ -48,21 +48,34 @@ def process_sources_result(news_sources_list):
     return news_sources_result
 
 
-def obtain_news_article(id):
-    news_articles_url = news_article_base_url.format(id, api_key)
+def obtain_news_article(source_id):
+    news_articles_url = news_article_base_url.format(source_id, api_key)
 
     with urllib.request.urlopen(news_articles_url) as url:
         news_articles_data = url.read()
         news_articles_response = json.loads(news_articles_data)
 
         news_article = None
-        if news_articles_response:
-            title = news_articles_response.get('title')
-            urlToImage = news_articles_response.get('urlToImage')
-            description = news_articles_response.get('description')
-            publishedAt = news_articles_response.get('publishedAt')
-            url = news_articles_response.get('url')
 
-            news_article = NewsArticle(title, urlToImage, description, publishedAt, url)
+        if news_articles_response['articles']:
+            news_article_list = news_articles_response['articles']
+            news_article = process_articles_result(news_article_list)
 
     return news_article
+
+
+def process_articles_result(articles):
+    news_article_list = []
+
+    for news_article_response in articles:
+        title = news_article_response.get('title')
+        urlToImage = news_article_response.get('urlToImage')
+        description = news_article_response.get('description')
+        publishedAt = news_article_response.get('publishedAt')
+        url = news_article_response.get('url')
+
+        if id:
+            news_article_instances = NewsArticle(title, urlToImage, description, publishedAt, url)
+            news_article_list.append(news_article_instances)
+
+    return news_article_list

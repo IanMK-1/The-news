@@ -3,7 +3,7 @@
     {% for news_sources in news_sources_list %}
         <div class="col-md-3">
             <li class="list-group-item">
-                <a href="/{{news_sources.id}}/news_articles">{{news_sources.name}}</a>
+                <a href="/news_articles/{{news_sources.id}}">{{news_sources.name}}</a>
                 <p><b>Country: </b>{{news_sources.country}}</p>
                 <p>{{news_sources.description}}</p>
                 <p><b>News source url link: </b><a href="{{news_sources.url}}" target="_blank">{{news_sources.url}}</a> </p>
