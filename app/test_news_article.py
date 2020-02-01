@@ -13,4 +13,6 @@ class NewsArticleTest(unittest.TestCase):
                                        "http://www.bbc.co.uk/news/world-51338899")
 
     def test_instance_of_NewsArticle_class(self):
+        """Test if new_article is an instance of class NewsSource"""
+
         self.assertTrue(isinstance(self.new_article, NewsArticle))
