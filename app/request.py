@@ -46,3 +46,23 @@ def process_sources_result(news_sources_list):
             news_sources_result.append(news_sources_instances)
 
     return news_sources_result
+
+
+def obtain_news_article(id):
+    news_articles_url = news_article_base_url.format(id, api_key)
+
+    with urllib.request.urlopen(news_articles_url) as url:
+        news_articles_data = url.read()
+        news_articles_response = json.loads(news_articles_data)
+
+        news_article = None
+        if news_articles_response:
+            title = news_articles_response.get('title')
+            urlToImage = news_articles_response.get('urlToImage')
+            description = news_articles_response.get('description')
+            publishedAt = news_articles_response.get('publishedAt')
+            url = news_articles_response.get('url')
+
+            news_article = NewsArticle(title, urlToImage, description, publishedAt, url)
+
+    return news_article

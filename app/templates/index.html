@@ -7,11 +7,21 @@
     </div>
 {% endblock %}
 
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+{% endblock %}
+
 {% block content %}
     <div class="container-fluid">
-        <h3>News Sources</h3>
-        <ul class="list-group">
-            {{ macro.displayNewsSourcesList(news_sources) }}
-        </ul>
+        <div class="row">
+            <h3>News Sources</h3>
+        </div>
+        <div class="row">
+            <ul class="list-group">
+                {{ macro.displayNewsSourcesList(news_sources) }}
+            </ul>
+        </div>
     </div>
 {% endblock %}

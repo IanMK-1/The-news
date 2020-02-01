@@ -1,7 +1,14 @@
 {% macro displayNewsSourcesList(news_sources_list) %}
 
     {% for news_sources in news_sources_list %}
-        <li class="list-group-item">{{news_sources.id}}</li>
+        <div class="col-md-3">
+            <li class="list-group-item">
+                <a href="/{{news_sources.id}}/news_articles">{{news_sources.name}}</a>
+                <p><b>Country: </b>{{news_sources.country}}</p>
+                <p>{{news_sources.description}}</p>
+                <p><b>News source url link: </b><a href="{{news_sources.url}}" target="_blank">{{news_sources.url}}</a> </p>
+            </li>
+        </div>
     {% endfor %}
 
 {% endmacro %}
