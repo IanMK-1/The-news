@@ -9,8 +9,8 @@ api_key = app.config['NEWS_API_KEY']
 # Getting the News Source base url and configuring it to app.config
 news_source_base_url = app.config['NEWS_API_SOURCE_BASE_URL']
 
-# Getting the News Source base url and configuring it to app.config
-news_article_base_url = app.config['NEW_API_ARTICLES_BASE_URL']
+# Getting the News Articles base url and configuring it to app.config
+news_article_base_url = app.config['NEWS_API_ARTICLES_BASE_URL']
 
 
 def obtain_news_sources(category):
@@ -26,6 +26,23 @@ def obtain_news_sources(category):
 
         if get_news_source_response['sources']:
             news_sources_result_list = get_news_source_response['sources']
-            news_sources_result = process_sources(news_sources_result_list)
+            news_sources_result = process_sources_result(news_sources_result_list)
+
+    return news_sources_result
+
+
+def process_sources_result(news_sources_list):
+    news_sources_result = []
+
+    for news_sources_items in news_sources_list:
+        id = news_sources_items.get('id')
+        name = news_sources_items.get('name')
+        country = news_sources_items.get('country')
+        description = news_sources_items.get('description')
+        url = news_sources_items.get('url')
+
+        if id:
+            news_sources_instances = NewsSource(id, name, country, description, url)
+            news_sources_result.append(news_sources_instances)
 
     return news_sources_result
