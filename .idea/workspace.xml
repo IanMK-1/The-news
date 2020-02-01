@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c61fdbe2-23b7-4c32-a459-747ed0d9979e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/templates/macros.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/request.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/request.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_news_source.py">
+  <component name="RunManager" selected="Python.run">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="The-news" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,9 +83,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.run" />
         <item itemvalue="Python tests.Unittests in test_news_source.py" />
         <item itemvalue="Python tests.Unittests in test_news_article.py" />
-        <item itemvalue="Python.run" />
       </list>
     </recent_temporary>
   </component>
@@ -104,22 +106,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1276" height="175" key="GridCell.Tab.0.bottom" timestamp="1580560875666">
+    <state width="1276" height="175" key="GridCell.Tab.0.bottom" timestamp="1580566715856">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1360.768@67.27.1299.741" timestamp="1580560875666" />
-    <state width="1276" height="175" key="GridCell.Tab.0.center" timestamp="1580560875666">
+    <state width="1276" height="175" key="GridCell.Tab.0.bottom/67.27.1299.741/1366.0.1360.768@67.27.1299.741" timestamp="1580566715856" />
+    <state width="1276" height="175" key="GridCell.Tab.0.center" timestamp="1580566715855">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1360.768@67.27.1299.741" timestamp="1580560875666" />
-    <state width="1276" height="175" key="GridCell.Tab.0.left" timestamp="1580560875666">
+    <state width="1276" height="175" key="GridCell.Tab.0.center/67.27.1299.741/1366.0.1360.768@67.27.1299.741" timestamp="1580566715855" />
+    <state width="1276" height="175" key="GridCell.Tab.0.left" timestamp="1580566715855">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1360.768@67.27.1299.741" timestamp="1580560875666" />
-    <state width="1276" height="175" key="GridCell.Tab.0.right" timestamp="1580560875666">
+    <state width="1276" height="175" key="GridCell.Tab.0.left/67.27.1299.741/1366.0.1360.768@67.27.1299.741" timestamp="1580566715855" />
+    <state width="1276" height="175" key="GridCell.Tab.0.right" timestamp="1580566715856">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1276" height="175" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1360.768@67.27.1299.741" timestamp="1580560875666" />
+    <state width="1276" height="175" key="GridCell.Tab.0.right/67.27.1299.741/1366.0.1360.768@67.27.1299.741" timestamp="1580566715856" />
     <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1580548650332">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
