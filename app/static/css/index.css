@@ -22,11 +22,14 @@ h3 {
 }
 .jumbotron {
     text-align: center;
-    background-color: rgb(47, 45, 47);
-    color: white;
+    background-image: url('/static/images/news.jpeg');
+    color: purple;
     margin-left: 14px;
     margin-right: 14px;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+}
+.jumbotron h1 {
+    font-size: 10vw;
 }
 #error {
     text-align: center;
@@ -34,4 +37,8 @@ h3 {
     font: bold;
     background-color: red;
 }
+.list-group-item {
+    border-color: blue;
+}
+
 
