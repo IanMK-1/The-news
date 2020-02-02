@@ -28,3 +28,10 @@ h3 {
     margin-right: 14px;
     font-family: 'Raleway', sans-serif;
 }
+#error {
+    text-align: center;
+    font-family: 'Cabin', sans-serif;
+    font: bold;
+    background-color: red;
+}
+
